@@ -1,0 +1,34 @@
+<!-- <h1>sign-in</h1> -->
+
+
+<html>
+    <head>
+
+        <title>
+            <%= title %>
+        </title>
+    </head>
+    <body>
+        <div>
+            <form action="/users/create-session" method="POST">
+<!-- here in action /users/create-session is new variable and create-session is used in user_controller to render this form -->
+                <div>
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="abc@example.com" required>
+                </div>
+                <div>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" placeholder="password" required>
+                </div>
+                <div>
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" placeholder="confirm_password" required>
+
+                </div>
+                <div>
+                    <input type="submit" value="Sign-In">
+                </div>
+            </form>
+        </div>
+    </body>
+</html> 
